@@ -1,0 +1,15 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/backend/FaaS/Part03/queryOrdersForRefresh/query-orders-for-refresh-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "__post_data": {
+            "loginId": "4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f",
+            "enableStateQuery": false,
+            "enableTravelDateQuery": false,
+            "enableBoughtDateQuery": false,
+            "travelDateStart": null,
+            "travelDateEnd": null,
+            "boughtDateStart": null,
+            "boughtDateEnd": null
+        }
+    }
+}

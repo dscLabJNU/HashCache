@@ -1,0 +1,9 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/backend/FaaS/Part02/getTripAllDetailInfo/get-trip-all-detai-info-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "tripId": "D1345",
+        "travelDate": 1676764800000,
+        "from": "Shang Hai",
+        "to": "Su Zhou"
+    }
+}

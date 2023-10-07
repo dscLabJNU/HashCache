@@ -1,0 +1,75 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Example: processing data in a sequence
+packages:
+  load-gen:
+    actions:
+      # Set-computation Workflow
+      sub_set:
+        function: set_computation/sub_set.py
+        runtime: $AI_RUNTIME # python-io:ai
+        annotations:
+          compute_cache: "True"
+      sum_combination:
+        function: set_computation/sum_combination.py
+        runtime: $NOR_RUNTIME
+        annotations:
+          compute_cache: "True"
+      set_packing:
+        function: set_computation/set_packing.py
+        runtime: $NOR_RUNTIME
+        annotations:
+          compute_cache: "True"
+
+      # Prediction-Pipeline Workflow
+      resize:
+        function: prediction-pipeline/resize.zip
+        runtime: $AI_RUNTIME
+        inputs:
+          origin_img: 10
+        annotations:
+          state_cache: "True"
+      predict:
+        function: prediction-pipeline/predict.zip
+        runtime: $AI_RUNTIME
+        annotations:
+          state_cache: "True"
+      render:
+        function: prediction-pipeline/render.zip
+        runtime: $AI_RUNTIME
+        annotations:
+          compute_cache: "True"
+
+    sequences:
+      set-computation:
+        actions: sub_set, sum_combination, set_packing
+        web: true
+      predict-pipeline:
+        actions: resize, predict, render
+        web: true
+    apis:
+      set-computation:
+        set-computation:
+          sequence:
+            set-computation:
+              method: GET
+      predict-pipeline:
+        predict-pipeline:
+          sequence:
+            predict-pipeline:
+              method: GET

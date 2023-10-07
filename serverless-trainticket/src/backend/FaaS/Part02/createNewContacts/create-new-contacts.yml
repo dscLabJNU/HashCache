@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  create-new-contacts:
+    lang: java8
+    handler: ./create-new-contacts
+    image: ${DOCKER_USERNAME}/create-new-contacts:latest

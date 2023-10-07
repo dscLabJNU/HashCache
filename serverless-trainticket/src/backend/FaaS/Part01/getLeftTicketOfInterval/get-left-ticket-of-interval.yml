@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-left-ticket-of-interval:
+    lang: java8
+    handler: ./get-left-ticket-of-interval
+    image: ${DOCKER_USERNAME}/get-left-ticket-of-interval:latest

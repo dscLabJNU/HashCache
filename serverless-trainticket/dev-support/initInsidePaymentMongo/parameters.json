@@ -1,0 +1,4 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/initDB/initDatabaseFunctions/initTrainMongo/init-train-mongo-owk/build/libs/function.jar",
+    "INPUT_STRING": {}
+}

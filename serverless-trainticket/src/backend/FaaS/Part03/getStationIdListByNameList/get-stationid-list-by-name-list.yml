@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-stationid-list-by-name-list:
+    lang: java8
+    handler: ./get-stationid-list-by-name-list
+    image: ${DOCKER_USERNAME}/get-stationid-list-by-name-list:latest

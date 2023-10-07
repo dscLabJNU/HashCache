@@ -1,0 +1,21 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/initDB/initDatabaseFunctions/initRouteMongo/init-route-mongo-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "routes": [
+            {
+                "id": "ac304d05-cb84-5bd4-a4d1-05d7c11a224f",
+                "startStation": "UnitedStates",
+                "endStation": "Canada",
+                "stationList": "UnitedStates,Canada",
+                "distanceList": "0,60000"
+            },
+            {
+                "id": "527a7ac0-0684-5258-9479-8347892bde4b",
+                "startStation": "UnitedStates",
+                "endStation": "Mexico",
+                "stationList": "UnitedStates,Mexico",
+                "distanceList": "0,60000"
+            }
+        ]
+    }
+}

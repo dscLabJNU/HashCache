@@ -1,0 +1,21 @@
+# #!/bin/bash
+
+# Fetch the logs
+kubectl logs -n openwhisk owdev-controller-1 | grep Redundant > log1.txt &
+kubectl logs -n openwhisk owdev-controller-0 | grep Redundant > log2.txt &
+wait
+
+# Combine the log files
+cat log1.txt log2.txt > combined_log.txt
+
+# Create the CSV file and write the header
+echo "func_name,hash_input,hash_output" > function_input_output_log.csv
+
+echo "Parse the log and write to the CSV"
+# awk -F '[,:]' '{print $4 "," $5 "," $6}' combined_log.txt >> output.csv
+awk -F '[,:]' '{gsub(/ /, "", $4); print $4 "," $5 "," $6}' combined_log.txt >> function_input_output_log.csv
+
+
+
+# Clean up the log files
+rm log1.txt log2.txt combined_log.txt

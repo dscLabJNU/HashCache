@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  init-train-mongo:
+    lang: java8
+    handler: ./init-train-mongo
+    image: ${DOCKER_USERNAME}/init-train-mongo:latest
+

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hashcache-global-proxy
+spec:
+  selector:
+    matchLabels:
+      app: hashcache-global-proxy
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hashcache-global-proxy
+    spec:
+      containers:
+      - name: hashcache-global-proxy
+        image: diomwu/hashcache-global-proxy:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8673
+        - containerPort: 8674
+        env:
+        - name: STRATEGY
+          value: "${STRATEGY}"
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hashcache-global-proxy
+spec:
+  type: NodePort
+  ports:
+    - name: socks5
+      port: 8673
+      nodePort: 32013
+    - name: http
+      port: 8674
+      nodePort: 32014
+  selector:
+   app: hashcache-global-proxy

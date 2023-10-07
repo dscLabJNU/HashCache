@@ -1,0 +1,5 @@
+shell
+pandas
+locust
+requests
+Virtualenv

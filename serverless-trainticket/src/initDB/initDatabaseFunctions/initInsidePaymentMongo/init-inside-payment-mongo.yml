@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  init-inside-payment-mongo:
+    lang: java8
+    handler: ./init-inside-payment-mongo
+    image: ${DOCKER_USERNAME}/init-inside-payment-mongo:latest
+

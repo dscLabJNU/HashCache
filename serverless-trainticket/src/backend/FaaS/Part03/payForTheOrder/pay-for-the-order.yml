@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  pay-for-the-order:
+    lang: java8
+    handler: ./pay-for-the-order
+    image: ${DOCKER_USERNAME}/pay-for-the-order:latest

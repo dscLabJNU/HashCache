@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  cancel-ticket:
+    lang: java8
+    handler: ./cancel-ticket
+    image: ${DOCKER_USERNAME}/cancel-ticket:latest

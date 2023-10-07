@@ -1,0 +1,1 @@
+../wrk2/wrk -D exp -t 10 -c 40 -d 4 -L -s ./wrk2/scripts/media-microservices/compose-review.lua http://localhost:8080/wrk2-api/review/compose -R 20

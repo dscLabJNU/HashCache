@@ -1,0 +1,17 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/initDB/initDatabaseFunctions/initStationMongo/init-station-mongo-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "stations": [
+            {
+                "id": "shanghai",
+                "name": "Shang Hai",
+                "stayTime": 10
+            },
+            {
+                "id": "shanghaihongqiao",
+                "name": "Shang Hai Hong Qiao",
+                "stayTime": 10
+            }
+        ]
+    }
+}

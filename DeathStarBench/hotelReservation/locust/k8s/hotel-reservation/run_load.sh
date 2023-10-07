@@ -1,0 +1,1 @@
+locust --config=locust.conf

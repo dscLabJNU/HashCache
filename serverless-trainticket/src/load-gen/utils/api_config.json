@@ -1,0 +1,74 @@
+{
+  "/guest/get-left-trip-tickets": {
+    "params": {
+      "__post_data": {
+        "startingPlace": "Shang Hai",
+        "endPlace": "Su Zhou",
+        "departureTime": ""
+      }
+    },
+    "rate": 600
+  },
+  "/guest/preserve-ticket": {
+    "params": {
+      "__post_data": {
+        "accountId": "4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f",
+        "contactsId": "90d357c6-b31e-49b8-8b1e-f33f5e51ccef",
+        "tripId": "D1345",
+        "seatType": "2",
+        "date": "",
+        "from": "Shang Hai",
+        "to": "Su Zhou",
+        "foodType": 0
+      }
+    },
+    "rate": 5
+  },
+  "/guest/query-orders-for-refresh": {
+    "params": {
+      "__post_data": {
+        "loginId": "4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f",
+        "enableStateQuery": false,
+        "enableTravelDateQuery": false,
+        "enableBoughtDateQuery": false,
+        "travelDateStart": null,
+        "travelDateEnd": null,
+        "boughtDateStart": null,
+        "boughtDateEnd": null
+      }
+    },
+    "rate": 390
+  },
+  "/guest/calculate-refund": {
+    "params": {
+      "orderId": ""
+    },
+    "rate": 10
+  },
+  "/guest/cancel-ticket": {
+    "params": {
+      "orderId": "",
+      "loginId": ""
+    },
+    "rate": 5
+  },
+  "/guest/create-new-contacts": {
+    "params": {}
+  },
+  "/guest/find-contacts-by-accountid": {
+    "params": {
+      "accountId": "4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"
+    },
+    "rate": 3
+  },
+  "/guest/pay-for-the-order": {
+    "params": {
+      "__post_data": {
+        "orderId": "",
+        "tripId": "",
+        "userId": ""
+      }
+    },
+    "rate": 2
+  }
+}

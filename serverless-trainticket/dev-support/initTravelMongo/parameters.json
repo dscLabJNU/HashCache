@@ -1,0 +1,17 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/initDB/initDatabaseFunctions/initTravelMongo/init-travel-mongo-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "travels": [
+            {
+                "tripId": "G1234",
+                "trainTypeId": "gaoTieOne",
+                "routeId": "ac304d05-cb84-5bd4-a4d1-05d7c11a224f",
+                "startingStationId": "UnitedStates",
+                "stationsId": "Canada",
+                "terminalStationId": "Canada",
+                "startingTimeStr": "Mon May 04 09:00:00 GMT+0800 2013",
+                "endTimeStr": "Mon May 04 15:51:52 GMT+0800 2013"
+            }
+        ]
+    }
+}

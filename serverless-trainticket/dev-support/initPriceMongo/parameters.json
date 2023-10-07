@@ -1,0 +1,28 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/initDB/initDatabaseFunctions/initPriceMongo/init-price-mongo-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "prices": [
+            {
+                "routeId": "6a77f19e-1d17-505d-9d56-3efbafb4deb9",
+                "id": "e0ce66c1-5c5c-504e-8ada-56a099140823",
+                "trainType": "gaoTieOne",
+                "basicPriceRate": 0.38,
+                "firstClassPriceRate": 1.0
+            },
+            {
+                "routeId": "9e93b5e6-6b98-5a0f-baa1-262aabb70fad",
+                "id": "1a242209-02c7-50a4-8557-023c45444ce8",
+                "trainType": "gaoTieOne",
+                "basicPriceRate": 0.38,
+                "firstClassPriceRate": 1.0
+            },
+            {
+                "routeId": "59ca88a0-2ae8-53f7-b724-9f2dc7a044a3",
+                "id": "7a26be75-067f-563b-9ebe-dd0eef370a47",
+                "trainType": "gaoTieOne",
+                "basicPriceRate": 0.38,
+                "firstClassPriceRate": 1.0
+            }
+        ]
+    }
+}

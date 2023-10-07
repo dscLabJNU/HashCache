@@ -1,0 +1,5 @@
+{
+    "ZIP_PATH": "/home/vagrant/actions-openwhisk-improving/py/sequence_actions/prediction-pipeline/predict.zip",
+    "ZIP_PATH_BAK": "/home/vagrant/actions-openwhisk-improving/py/image_processing.zip",
+    "INPUT_STRING": {}
+}

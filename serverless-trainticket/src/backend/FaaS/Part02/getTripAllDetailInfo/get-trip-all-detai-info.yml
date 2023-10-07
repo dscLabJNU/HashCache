@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-trip-all-detai-info:
+    lang: java8
+    handler: ./get-trip-all-detai-info
+    image: ${DOCKER_USERNAME}/get-trip-all-detai-info:latest

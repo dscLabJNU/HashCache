@@ -1,0 +1,20 @@
+venv
+*.zip
+__pycache__
+.vscode
+.idea
+results
+# records host params, e.g., apihost address
+params.py
+virtualenv/
+.DS_Store
+.metals
+# useless analyse
+system_call_analyze/
+
+action_api.json
+logs/
+function_input_output_log.csv
+locust_api_log.csv
+
+manifest_temp.yaml

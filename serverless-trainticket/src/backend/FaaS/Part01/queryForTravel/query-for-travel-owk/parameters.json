@@ -1,0 +1,18 @@
+{
+    "departureTime": 1676869033975,
+    "endPlace": "Su Zhou",
+    "trip": {
+        "endTime": 1367668792000,
+        "routeId": "f3d4d4ef-693b-4456-8eed-59c0d717dd08",
+        "startingStationId": "shanghai",
+        "startingTime": 1367622000000,
+        "stationsId": "suzhou",
+        "terminalStationId": "taiyuan",
+        "trainTypeId": "DongCheOne",
+        "tripId": {
+            "number": "1345",
+            "type": "D"
+        }
+    },
+    "startingPlace": "Shang Hai"
+}

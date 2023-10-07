@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  modify-order:
+    lang: java8
+    handler: ./modify-order
+    image: ${DOCKER_USERNAME}/modify-order:latest

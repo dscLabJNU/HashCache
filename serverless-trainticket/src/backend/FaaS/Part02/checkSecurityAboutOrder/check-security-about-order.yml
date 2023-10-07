@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  check-security-about-order:
+    lang: java8
+    handler: ./check-security-about-order
+    image: ${DOCKER_USERNAME}/check-security-about-order:latest

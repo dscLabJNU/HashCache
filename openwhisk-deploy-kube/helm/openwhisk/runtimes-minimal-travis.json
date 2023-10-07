@@ -1,0 +1,60 @@
+
+{
+    "runtimes": {
+        "nodejs": [
+            {
+                "kind": "nodejs:14",
+                "default": true,
+                "image": {
+                    "prefix": "openwhisk",
+                    "name": "action-nodejs-v14",
+                    "tag": "1.19.0"
+                },
+                "deprecated": false,
+                "attached": {
+                    "attachmentName": "codefile",
+                    "attachmentType": "text/plain"
+                }
+            }
+        ],
+        "python": [
+            {
+                "kind": "python:3",
+                "default": true,
+                "image": {
+                    "prefix": "openwhisk",
+                    "name": "action-python-v3.7",
+                    "tag": "1.17.0"
+                },
+                "deprecated": false,
+                "attached": {
+                    "attachmentName": "codefile",
+                    "attachmentType": "text/plain"
+                }
+            }
+        ],
+        "swift": [
+            {
+                "kind": "swift:4.2",
+                "default": true,
+                "image": {
+                    "prefix": "openwhisk",
+                    "name": "action-swift-v4.2",
+                    "tag": "1.17.0"
+                },
+                "deprecated": false,
+                "attached": {
+                    "attachmentName": "codefile",
+                    "attachmentType": "text/plain"
+                }
+            }
+        ]
+    },
+    "blackboxes": [
+        {
+            "prefix": "openwhisk",
+            "name": "dockerskeleton",
+            "tag": "1.14.0"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "/guest/load-gen/predict-pipeline": {
+    "params": {},
+    "rate": 1
+  },
+  "/guest/load-gen/set-computation": {
+    "params": {},
+    "rate": 3
+  },
+  "/guest/rule_match": {
+    "params": {},
+    "rate": 3
+  },
+  "/guest/linear_regression": {
+    "params": {},
+    "rate": 3
+  },
+  "/guest/feature_transform": {
+    "params": {},
+    "rate": 3
+  },
+  "/guest/decision_tree": {
+    "params": {},
+    "rate": 3
+  }
+}

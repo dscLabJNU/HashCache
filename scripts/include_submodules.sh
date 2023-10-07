@@ -1,0 +1,9 @@
+git submodule add git@github.com:dscLabJNU/openwhisk-improving.git openwhisk-improving
+git submodule add git@github.com:GitHubDiom/openwhisk-proxy.git openwhisk-proxy
+git submodule add git@github.com:dscLabJNU/openwhisk-runtime-python-io.git openwhisk-runtime-python-io
+git submodule add git@github.com:dscLabJNU/actions-openwhisk-improving.git actions-openwhisk-improving
+git submodule add git@github.com:dscLabJNU/serverless-trainticket-improving.git serverless-trainticket
+git submodule add git@github.com:dscLabJNU/openwhisk-deploy-kube.git openwhisk-deploy-kube
+git submodule add git@github.com:dscLabJNU/DeathStarBench.git DeathStarBench
+git submodule add git@github.com:GitHubDiom/openwhisk-resource-monitor.git openwhisk-resource-monitor
+git submodule add git@github.com:dscLabJNU/openwhisk-runtime-java.git openwhisk-runtime-java

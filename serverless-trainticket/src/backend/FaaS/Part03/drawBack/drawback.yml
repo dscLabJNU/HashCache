@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  drawback:
+    lang: java8
+    handler: ./drawback
+    image: ${DOCKER_USERNAME}/drawback:latest

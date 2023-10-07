@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  query-for-station-id-by-station-name:
+    lang: java8
+    handler: ./query-for-station-id-by-station-name
+    image: ${DOCKER_USERNAME}/query-for-station-id-by-station-name:latest

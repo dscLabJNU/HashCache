@@ -1,0 +1,1 @@
+docker run -it -p 8673:8673 -p 8674:8674 diomwu/hashcache-global-proxy:latest

@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  create-third-party-payment-and-pay:
+    lang: java8
+    handler: ./create-third-party-payment-and-pay
+    image: ${DOCKER_USERNAME}/create-third-party-payment-and-pay:latest

@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  preserve-ticket:
+    lang: java8
+    handler: ./preserve-ticket
+    image: ${DOCKER_USERNAME}/preserve-ticket:latest

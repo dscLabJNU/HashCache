@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  init-auth-mongo:
+    lang: java8
+    handler: ./init-auth-mongo
+    image: ${DOCKER_USERNAME}/init-auth-mongo:latest
+

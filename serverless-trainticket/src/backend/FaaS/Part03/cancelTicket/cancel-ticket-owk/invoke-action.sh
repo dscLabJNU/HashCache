@@ -1,0 +1,1 @@
+curl -k https://172.17.8.101:31001/api/23bc46b1-71f6-4ed5-8c54-816aa4f8c502/ticket/cancleTicket/d9c2537c-3ed5-40c5-8dca-4ec2a24ec175/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f

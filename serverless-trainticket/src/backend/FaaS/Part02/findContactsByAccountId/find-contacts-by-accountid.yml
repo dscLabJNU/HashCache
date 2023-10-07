@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  find-contacts-by-accountid:
+    lang: java8
+    handler: ./find-contacts-by-accountid
+    image: ${DOCKER_USERNAME}/find-contacts-by-accountid:latest

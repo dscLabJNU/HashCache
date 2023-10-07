@@ -1,0 +1,13 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/backend/FaaS/Part02/preserveTicket/preserve-ticket-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "accountId": "4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f",
+        "contactsId": "9e0b2927-67fa-4bd1-8198-cdad5c762289",
+        "tripId": "D1345",
+        "seatType": "2",
+        "date": "2023-02-29",
+        "from": "Shang Hai",
+        "to": "Su Zhou",
+        "foodType": 0
+    }
+}

@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-user-by-userid:
+    lang: java8
+    handler: ./get-user-by-userid
+    image: ${DOCKER_USERNAME}/get-user-by-userid:latest

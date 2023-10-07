@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-route-by-tripid:
+    lang: java8
+    handler: ./get-route-by-tripid
+    image: ${DOCKER_USERNAME}/get-route-by-tripid:latest
+

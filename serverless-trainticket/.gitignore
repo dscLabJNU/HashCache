@@ -1,0 +1,8 @@
+template
+build
+.gradle
+.settings
+owk_gateway.json
+ts_host_name.json
+*.pdf
+function_input_output_log.csv

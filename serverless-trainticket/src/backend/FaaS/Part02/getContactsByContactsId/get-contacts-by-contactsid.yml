@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://${MASTER_IP}:31112
+functions:
+  get-contacts-by-contactsid:
+    lang: java8
+    handler: ./get-contacts-by-contactsid
+    image: ${DOCKER_USERNAME}/get-contacts-by-contactsid:latest

@@ -1,0 +1,30 @@
+{
+  "/guest/reservation": {
+    "params": {},
+    "rate": 5
+  },
+  "/guest/recommendation": {
+    "params": {},
+    "rate": 390
+  },
+  "/guest/user": {
+    "params": {},
+    "rate": 5
+  },
+  "/guest/profile": {
+    "params": {},
+    "rate": 1
+  },
+  "/guest/geo": {
+    "params": {},
+    "rate": 1
+  },
+  "/guest/search": {
+    "params": {},
+    "rate": 600
+  },
+  "/guest/rate": {
+    "params": {},
+    "rate": 3
+  }
+}

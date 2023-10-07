@@ -1,0 +1,63 @@
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: 172.10.8.101
+    apiHostPort: 31001
+  limits:
+    actionsInvokesPerminute: 6000
+    actionsInvokesConcurrent: 100
+    triggersFiresPerminute: 600
+    actionsSequenceMaxlength: 50
+    actions:
+      time:
+        min: "100ms"
+        max: "5m"
+        std: "1m"
+      memory:
+        min: "128m"
+        max: "4096m"
+        std: "256m"
+  containerPool:
+    userMemory: "32768m" 
+
+nginx:
+  httpsNodePort: 31001
+
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+    enableConcurrency: true
+    kubernetes:
+      isolateUserActions: true
+      replicaCount: 2
+  runtimeDeleteTimeout: "100 seconds"
+  jvmHeapMB: "4096"
+  imageName: "diomwu/invoker"
+  imageTag: "HashCache"
+  imagePullPolicy: "Always"
+
+scheduler:
+  enabled: false
+  # imageName: "openwhisk/scheduler"
+  # imageTag: "ef725a6"
+  # imageName: "diomwu/scheduler"
+  # imageTag: "HashCache"
+
+controller:
+  imageName: "diomwu/controller"
+  imageTag: "HashCache"
+  imagePullPolicy: "Always"
+  replicaCount: 2
+
+# utility:
+  # imageName: "diomwu/ow-utils"
+  # imageTag: "HashCache"
+
+
+k8s:
+  persistence:
+    enabled: false
+
+provider:
+    name: openwhisk
+    ignore_certs: true

@@ -1,0 +1,1 @@
+python3 init_travel_db.py

@@ -1,0 +1,10 @@
+{
+    "JAR_PATH": "/home/vagrant/serverless-trainticket/src/backend/FaaS/Part01/getLeftTripTickets/get-left-trip-tickets-owk/build/libs/function.jar",
+    "INPUT_STRING": {
+        "__post_data": {
+            "departureTime": "2023-03-14",
+            "endPlace": "Tai Yuan",
+            "startingPlace": "Shang Hai"
+        }
+    }
+}
