@@ -102,11 +102,6 @@ wsk property set --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK
 
 ### Setting the resource monitor
 
-```shell
-# Checkout to branch `remotes/origin/dev-HashCache`
-git checkout -b dev-HashCache remotes/origin/dev-HashCache
-```
-
 Check and modify the paramaters in `paramaters.json`
 
 
