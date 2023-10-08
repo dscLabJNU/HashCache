@@ -105,6 +105,8 @@ It may take some time (10 mins?).
 #### 4.1. AWS account
 Checkout the `__main__.py` in `actions-openwhisk-improving/src/*`, and set your `aws_access_key_id` and `aws_secret_access_key`.
 
+Upload the objects in `actions-openwhisk-improving/src/objects_to_S3` to your AWS bucket, see `bucket_key` and `bucket_name` in the `__main__.py`.
+
 #### 4.2. Resource Monitor
 Check and modify the parameters in `paramaters.json` under the `openwhisk-resource-monitor` folder.
 Run `bash monitor_resources.sh` to make sure the script is ready.
