@@ -14,8 +14,20 @@ HashCache has been accepted by TPDS (Transactions on Parallel and Distributed Sy
 
 If you use HashCache in your research, please cite our TPDS paper:
 
-```
-Comming soon
+*Z. Wu, Y. Deng, Y. Zhou, L. Cui and X. Qin, "HashCache: Accelerating Serverless Computing by Skipping Duplicated Function Execution," in IEEE Transactions on Parallel and Distributed Systems, vol. 34, no. 12, pp. 3192-3206, Dec. 2023, doi: 10.1109/TPDS.2023.3323330.*
+
+```bibTex
+@ARTICLE{10275106,
+  author={Wu, Zhaorui and Deng, Yuhui and Zhou, Yi and Cui, Lin and Qin, Xiao},
+  journal={IEEE Transactions on Parallel and Distributed Systems}, 
+  title={HashCache: Accelerating Serverless Computing by Skipping Duplicated Function Execution}, 
+  year={2023},
+  volume={34},
+  number={12},
+  pages={3192-3206},
+  doi={10.1109/TPDS.2023.3323330}}
+
+
 ```
 
 
